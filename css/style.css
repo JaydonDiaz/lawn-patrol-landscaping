@@ -291,25 +291,28 @@ html[data-theme="light"] .theme-toggle-mobile .icon-sun { display: none; }
   touch-action: pan-y;
 }
 .yard-scene { position: absolute; inset: 0; }
-.yard-scene--after { clip-path: inset(0 0 0 0); }
-.yard-scene--before { z-index: 2; }
+.yard-scene--before { z-index: 1; }
+.yard-scene--after { z-index: 2; }
 .yard-ground { position: absolute; inset: 0; }
 .yard-ground--before {
   background:
-    radial-gradient(ellipse 90px 50px at 20% 30%, color-mix(in srgb, var(--clay-500) 55%, transparent), transparent 70%),
-    radial-gradient(ellipse 120px 60px at 70% 65%, color-mix(in srgb, var(--clay-600) 40%, transparent), transparent 70%),
-    radial-gradient(ellipse 70px 40px at 85% 20%, color-mix(in srgb, #d8c662 45%, transparent), transparent 70%),
-    repeating-linear-gradient(100deg, #5f7a45, #5f7a45 18px, #536b3c 18px, #536b3c 36px);
+    radial-gradient(ellipse 110px 60px at 18% 28%, #8a6a3c, transparent 72%),
+    radial-gradient(ellipse 140px 70px at 72% 62%, #7c5c33, transparent 72%),
+    radial-gradient(ellipse 90px 50px at 88% 18%, #a68a3f, transparent 72%),
+    radial-gradient(ellipse 100px 55px at 40% 80%, #7c5c33, transparent 72%),
+    radial-gradient(ellipse 130px 65px at 55% 15%, #8f7840, transparent 72%),
+    #9c8f52;
 }
 .yard-ground--after {
-  background: repeating-linear-gradient(100deg, var(--green-600), var(--green-600) 24px, var(--green-700) 24px, var(--green-700) 48px);
+  background: repeating-linear-gradient(100deg, #4fc257, #4fc257 24px, #2f9a3a 24px, #2f9a3a 48px);
 }
 .weed-tuft {
   position: absolute;
-  width: 3px; height: 16px;
-  background: #3f5a2e;
+  width: 3px; height: 18px;
+  background: #4a5e2a;
   border-radius: 2px 2px 0 0;
   transform-origin: bottom center;
+  box-shadow: 0 0 0 0.5px rgba(0,0,0,0.25);
 }
 .weed-tuft::before, .weed-tuft::after {
   content: ''; position: absolute; bottom: 0; width: 3px; height: 12px; background: inherit; border-radius: 2px 2px 0 0;
@@ -327,25 +330,33 @@ html[data-theme="light"] .theme-toggle-mobile .icon-sun { display: none; }
 .d2 { left: 55%; bottom: 52%; transform: rotate(-15deg); }
 .d3 { left: 70%; bottom: 40%; transform: rotate(40deg); }
 
-.yard-path { position: absolute; left: -8%; bottom: 0; width: 42%; height: 100%; transform: skewX(-18deg); }
-.yard-path--rough { background: #9b916f; opacity: 0.85; }
-.yard-path--rough::after { content:''; position:absolute; inset:0; background: repeating-linear-gradient(90deg, transparent, transparent 14px, rgba(0,0,0,0.12) 14px, rgba(0,0,0,0.12) 16px); }
-.yard-path--clean { background: #c7c2b0; }
+.yard-path { position: absolute; left: -6%; bottom: 0; width: 22%; height: 100%; transform: skewX(-18deg); }
+.yard-path--rough {
+  background:
+    radial-gradient(ellipse 36px 60px at 30% 20%, rgba(30,26,14,0.55), transparent 70%),
+    radial-gradient(ellipse 44px 80px at 65% 55%, rgba(30,26,14,0.5), transparent 70%),
+    radial-gradient(ellipse 30px 50px at 20% 80%, rgba(30,26,14,0.5), transparent 70%),
+    #6b6355;
+}
+.yard-path--rough::after { content:''; position:absolute; inset:0; background: repeating-linear-gradient(90deg, transparent, transparent 14px, rgba(0,0,0,0.18) 14px, rgba(0,0,0,0.18) 16px); }
+.yard-path--clean { background: #e9e6da; box-shadow: inset 0 0 40px rgba(255,255,255,0.4); }
 
 .yard-shrub { position: absolute; bottom: 6%; width: 78px; height: 56px; }
 .yard-shrub.s1 { right: 14%; }
 .yard-shrub.s2 { right: 26%; bottom: 6%; width: 54px; height: 40px; }
 .yard-shrub--shaggy {
-  background: #3f6436;
-  border-radius: 45% 55% 50% 50% / 60% 50% 60% 40%;
-  filter: blur(0.3px);
-  box-shadow: inset -6px -6px 0 -2px rgba(0,0,0,0.15);
+  background: #5c6b35;
+  border-radius: 40% 60% 55% 45% / 65% 45% 65% 35%;
+  filter: blur(0.4px);
+  box-shadow: inset -6px -6px 0 -2px rgba(0,0,0,0.2);
+  transform: scale(1.18) rotate(-4deg);
 }
-.yard-shrub--shaggy::before { content:''; position:absolute; top:-10px; left:10px; width:18px; height:18px; background:inherit; border-radius:50%; }
+.yard-shrub--shaggy::before { content:''; position:absolute; top:-14px; left:6px; width:22px; height:20px; background:inherit; border-radius:40% 60% 50% 50%; transform: rotate(-12deg); }
+.yard-shrub--shaggy::after { content:''; position:absolute; top:-4px; right:-6px; width:16px; height:16px; background:inherit; border-radius:50%; }
 .yard-shrub--neat {
-  background: var(--green-700);
-  border-radius: 50% 50% 46% 46% / 60% 60% 40% 40%;
-  box-shadow: inset -4px -4px 0 -2px rgba(0,0,0,0.12);
+  background: linear-gradient(155deg, #4fc257, var(--green-700) 75%);
+  border-radius: 50% 50% 46% 46% / 62% 62% 38% 38%;
+  box-shadow: inset -4px -4px 0 -2px rgba(0,0,0,0.15), inset 3px 3px 0 -3px rgba(255,255,255,0.35);
 }
 
 .yard-scene--after { clip-path: inset(0 calc(100% - var(--yard-pos, 50%)) 0 0); }
@@ -384,8 +395,8 @@ html[data-theme="light"] .theme-toggle-mobile .icon-sun { display: none; }
   z-index: 4;
   backdrop-filter: blur(4px);
 }
-.yard-label--before { left: 16px; }
-.yard-label--after { right: 16px; }
+.yard-label--before { right: 16px; }
+.yard-label--after { left: 16px; }
 .yard-hint {
   display: flex; align-items: center; justify-content: center; gap: 8px;
   margin-top: 16px;
