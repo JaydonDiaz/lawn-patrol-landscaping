@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+  </script>
+  <script src="js/theme.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawn Patrol Landscaping | Lawn Care &amp; Pressure Washing in Oviedo, FL</title>
+  <meta name="description" content="Lawn Patrol Landscaping is a family-owned lawn care, landscaping, and pressure washing company serving Oviedo, FL since 2012 — mowing, trimming, sod, mulch, and more.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icon-16.png">
+  <link rel="apple-touch-icon" href="images/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== ICON SPRITE ===== -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+  </symbol>
+  <symbol id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
+  </symbol>
+  <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12h14M13 6l6 6-6 6"/>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 13l4 4L19 7"/>
+  </symbol>
+  <symbol id="icon-drag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 7l-4 5 4 5M16 7l4 5-4 5"/>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/>
+  </symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>
+  </symbol>
+  <symbol id="icon-mower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="7" cy="17" r="2.5"/><circle cx="17" cy="17" r="2.5"/><path d="M7 17h10"/><path d="M9.5 17V9a2 2 0 0 1 2-2h2.5L17 10.5V17"/><path d="M11.5 7V4h3"/>
+  </symbol>
+  <symbol id="icon-shrub" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22v-7"/><path d="M12 15a5 5 0 0 0 5-5 4 4 0 0 0-4-4 4 4 0 0 0-1 .14A4 4 0 0 0 5 10a5 5 0 0 0 5 5z"/><path d="M12 11a4 4 0 0 1 4-4"/>
+  </symbol>
+  <symbol id="icon-sod" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="10" width="18" height="10" rx="1.5"/><path d="M3 10l3-6h12l3 6"/><path d="M8 20v-5M12 20v-5M16 20v-5"/>
+  </symbol>
+  <symbol id="icon-mulch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 18c2-1 3-3 3-5s-1-3-1-5 2-4 4-4 3 2 3 4-1 3-1 5 2 3 4 3 3-2 3-4" transform="rotate(90 12 12) scale(0.9) translate(1.3 1.3)"/><path d="M4 20h16"/>
+  </symbol>
+  <symbol id="icon-spray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 3h4l1 4H8z"/><path d="M8 7h6l2 14H6z"/><path d="M14 11l4-1M15 14l4 0M14 17l3.5 1.5"/>
+  </symbol>
+  <symbol id="icon-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 21c0-7 4.5-15 15-18 1 10.5-5.5 17-15 18z"/><path d="M9 15c3-3 6-6 9-9"/>
+  </symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5z"/><path d="M9 12l2 2 4-4"/>
+  </symbol>
+  <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M2 13h20"/>
+  </symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>
+  </symbol>
+  <symbol id="icon-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V4"/><path d="M9 12l2 2 4-4"/>
+  </symbol>
+  <symbol id="icon-walk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="4" r="2"/><path d="M10 22l1-7-3-2 1-5 3 2 2-2 3 1-2 4-2-1-1 3 3 2-1 5"/>
+  </symbol>
+  <symbol id="icon-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H15a4 4 0 0 0 4-4 4 4 0 0 0-4-4H9a4 4 0 0 1-4-4 4 4 0 0 1 4-4h6.5"/>
+  </symbol>
+</svg>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo">
+      <span class="logo-mark" aria-hidden="true"><svg width="20" height="20"><use href="#icon-shield"/></svg></span>
+      <span class="nav-logo-text">Lawn Patrol<span>Oviedo, FL</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#route" class="nav-link">The Route</a>
+      <a href="#why" class="nav-link">Why Us</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#visit" class="nav-link">Visit</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#quote" class="btn btn-primary btn-sm">Get a Free Quote</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+        <svg class="icon-sun" width="17" height="17"><use href="#icon-sun"/></svg>
+        <svg class="icon-moon" width="17" height="17"><use href="#icon-moon"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#services" class="mobile-link">Services</a></li>
+    <li><a href="#route" class="mobile-link">The Route</a></li>
+    <li><a href="#why" class="mobile-link">Why Us</a></li>
+    <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+    <li><a href="#visit" class="mobile-link">Visit</a></li>
+  </ul>
+  <a href="#quote" class="btn btn-primary btn-full" style="margin-bottom:10px;">Get a Free Quote</a>
+  <button class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" type="button" aria-label="Toggle light and dark theme">
+    <svg class="icon-sun" width="17" height="17"><use href="#icon-sun"/></svg>
+    <svg class="icon-moon" width="17" height="17"><use href="#icon-moon"/></svg>
+    <span class="theme-label-dark">Daylight Mode</span>
+    <span class="theme-label-light">Dusk Mode</span>
+  </button>
+</div>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal-up"><span class="eyebrow-dot"></span>Oviedo, FL &middot; Family Owned Since 2012</p>
+        <h1 class="hero-title reveal-up">
+          <span class="line">ON PATROL</span>
+          <span class="line accent">FOR YOUR LAWN.</span>
+        </h1>
+        <p class="hero-sub reveal-up">Mowing, trimming, sod, mulch, and pressure washing for Oviedo homes and businesses &mdash; run by a local family, not a franchise.</p>
+        <div class="hero-actions reveal-up">
+          <a href="#quote" class="btn btn-primary">Get a Free Quote<svg width="16" height="16"><use href="#icon-arrow"/></svg></a>
+          <a href="tel:+13212360906" class="btn btn-ghost"><svg width="16" height="16"><use href="#icon-phone"/></svg>(321) 236-0906</a>
+        </div>
+        <div class="hero-stats reveal-up">
+          <div class="hero-stat"><span class="stat-num-row"><span class="stat-num" data-count="14">0</span><span class="stat-plus">+</span></span><span class="stat-label">Years Local</span></div>
+          <div class="hero-stat"><span class="stat-num-row"><span class="stat-num" data-count="6">0</span></span><span class="stat-label">Core Services</span></div>
+          <div class="hero-stat"><span class="stat-num-row"><span class="stat-num" data-count="6">0</span></span><span class="stat-label">Days a Week</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-up">
+        <div class="yard-slider" id="yard-slider">
+          <div class="yard-scene yard-scene--before" aria-hidden="true">
+            <div class="yard-ground yard-ground--before">
+              <span class="weed-tuft w1"></span><span class="weed-tuft w2"></span><span class="weed-tuft w3"></span>
+              <span class="weed-tuft w4"></span><span class="weed-tuft w5"></span><span class="weed-tuft w6"></span>
+              <span class="debris d1"></span><span class="debris d2"></span><span class="debris d3"></span>
+            </div>
+            <div class="yard-path yard-path--rough"></div>
+            <div class="yard-shrub yard-shrub--shaggy s1"></div>
+            <div class="yard-shrub yard-shrub--shaggy s2"></div>
+          </div>
+          <div class="yard-scene yard-scene--after" id="yard-after" aria-hidden="true">
+            <div class="yard-ground yard-ground--after"></div>
+            <div class="yard-path yard-path--clean"></div>
+            <div class="yard-shrub yard-shrub--neat s1"></div>
+            <div class="yard-shrub yard-shrub--neat s2"></div>
+          </div>
+          <div class="yard-handle" id="yard-handle" role="slider" tabindex="0" aria-label="Before and after yard comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <span class="yard-handle-grip"><svg width="16" height="16"><use href="#icon-drag"/></svg></span>
+          </div>
+          <span class="yard-label yard-label--before">BEFORE</span>
+          <span class="yard-label yard-label--after">AFTER</span>
+        </div>
+        <p class="yard-hint"><svg width="14" height="14"><use href="#icon-drag"/></svg>Drag the line to see the Lawn Patrol difference</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TICKER ===== -->
+  <section class="ticker-wrap">
+    <div class="ticker" id="ticker">
+      <div class="ticker-track" id="ticker-track">
+        <span class="ticker-item">Lawn Maintenance</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Shrub &amp; Tree Trimming</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Sod Installation</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Mulch &amp; Bed Refresh</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Pressure Washing</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Plant Removal &amp; Install</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Lawn Maintenance</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Shrub &amp; Tree Trimming</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Sod Installation</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Mulch &amp; Bed Refresh</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Pressure Washing</span><span class="ticker-sep">&bull;</span>
+        <span class="ticker-item">Plant Removal &amp; Install</span><span class="ticker-sep">&bull;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="section-tag reveal-up">What We Do</p>
+      <h2 class="section-title reveal-up">Full-service lawn &amp; landscape care</h2>
+      <p class="section-sub reveal-up">Residential and commercial properties across Oviedo &mdash; one call covers all of it.</p>
+
+      <div class="services-grid">
+        <div class="service-card reveal-up">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-mower"/></svg></span>
+          <h3>Lawn Maintenance</h3>
+          <p>Weekly or biweekly mowing, edging, and blow-off so your lawn looks sharp every time, not just once a season.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-shrub"/></svg></span>
+          <h3>Shrub &amp; Tree Trimming</h3>
+          <p>Hedges and shrubs shaped on a schedule, plus tree trimming to keep growth healthy and your property tidy.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-sod"/></svg></span>
+          <h3>Sod Installation</h3>
+          <p>Dead or patchy grass replaced with fresh sod, graded and laid right so it actually takes root.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-mulch"/></svg></span>
+          <h3>Mulch &amp; Bed Refresh</h3>
+          <p>Clean-edged beds and fresh mulch that make the whole yard read as cared-for from the curb.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-spray"/></svg></span>
+          <h3>Pressure Washing</h3>
+          <p>Driveways, walkways, and siding blasted clean of mildew, mold, and years of Florida grime.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-leaf"/></svg></span>
+          <h3>Plant Removal &amp; Install</h3>
+          <p>Overgrown or dead plants pulled out, new ones selected and installed to fit your beds and budget.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PATROL ROUTE ===== -->
+  <section class="section section-route" id="route">
+    <div class="container">
+      <p class="section-tag reveal-up">How It Works</p>
+      <h2 class="section-title reveal-up">Join the Patrol Route</h2>
+      <p class="section-sub reveal-up">Three stops and your property is on our regular rotation &mdash; here's the path every new client travels.</p>
+
+      <div class="route-wrap">
+        <svg class="route-line" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
+          <path id="route-path-bg" d="M 40 110 C 260 20, 400 200, 500 110 S 740 20, 960 110" fill="none" stroke-width="3"/>
+          <path id="route-path-fg" d="M 40 110 C 260 20, 400 200, 500 110 S 740 20, 960 110" fill="none" stroke-width="3"/>
+        </svg>
+        <div class="route-stops">
+          <div class="route-stop" data-stop="0">
+            <span class="stop-marker"><svg width="20" height="20"><use href="#icon-clipboard"/></svg></span>
+            <span class="stop-num">01</span>
+            <h3>Request a Quote</h3>
+            <p>Tell us about your property &mdash; size, services, how often you want us there.</p>
+          </div>
+          <div class="route-stop" data-stop="1">
+            <span class="stop-marker"><svg width="20" height="20"><use href="#icon-walk"/></svg></span>
+            <span class="stop-num">02</span>
+            <h3>We Walk the Property</h3>
+            <p>A real walkthrough, not a guess &mdash; so the quote matches what your yard actually needs.</p>
+          </div>
+          <div class="route-stop" data-stop="2">
+            <span class="stop-marker"><svg width="20" height="20"><use href="#icon-route"/></svg></span>
+            <span class="stop-num">03</span>
+            <h3>Your Lawn Joins the Route</h3>
+            <p>You're added to our regular rotation &mdash; same crew, same standard, every visit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="section" id="why">
+    <div class="container">
+      <p class="section-tag reveal-up">Why Oviedo Chooses Us</p>
+      <h2 class="section-title reveal-up">Not a franchise. Not a stranger.</h2>
+      <p class="section-sub reveal-up">A local family business that's maintained this town's yards since 2012.</p>
+
+      <div class="why-grid">
+        <div class="why-card reveal-up">
+          <span class="card-icon"><svg width="24" height="24"><use href="#icon-pin"/></svg></span>
+          <h3>Locally Owned Since 2012</h3>
+          <p>Based right here in Oviedo &mdash; not a call center routing you to a contractor.</p>
+        </div>
+        <div class="why-card reveal-up">
+          <span class="card-icon"><svg width="24" height="24"><use href="#icon-shield"/></svg></span>
+          <h3>Licensed &amp; Insured</h3>
+          <p>Fully licensed and insured, so your property is protected on every visit.</p>
+        </div>
+        <div class="why-card reveal-up">
+          <span class="card-icon"><svg width="24" height="24"><use href="#icon-briefcase"/></svg></span>
+          <h3>Residential &amp; Commercial</h3>
+          <p>From single-family yards to commercial properties, sized to fit the job.</p>
+        </div>
+        <div class="why-card reveal-up">
+          <span class="card-icon"><svg width="24" height="24"><use href="#icon-calendar"/></svg></span>
+          <h3>Flexible Scheduling</h3>
+          <p>Open six days a week with recurring or one-time visits built around you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="section section-reviews" id="reviews">
+    <div class="container">
+      <p class="section-tag reveal-up">From the Neighborhood</p>
+      <h2 class="section-title reveal-up">What Oviedo is saying</h2>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal-up">
+          <div class="review-stars" aria-hidden="true">
+            <svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg>
+          </div>
+          <p>&ldquo;Same crew every time, lawn always looks the same clean cut. That consistency is worth more than people realize.&rdquo;</p>
+          <span class="review-who">Oviedo homeowner</span>
+        </div>
+        <div class="review-card reveal-up">
+          <div class="review-stars" aria-hidden="true">
+            <svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg>
+          </div>
+          <p>&ldquo;Had them pressure wash the driveway and walkway. Didn't realize how much grime had built up until it was gone.&rdquo;</p>
+          <span class="review-who">Oviedo homeowner</span>
+        </div>
+        <div class="review-card reveal-up">
+          <div class="review-stars" aria-hidden="true">
+            <svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg><svg width="16" height="16"><use href="#icon-star"/></svg>
+          </div>
+          <p>&ldquo;Easy to reach, easy to schedule around, and they actually show up when they say they will.&rdquo;</p>
+          <span class="review-who">Oviedo property manager</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISIT / QUOTE ===== -->
+  <section class="section section-visit" id="visit">
+    <div class="container visit-grid">
+      <div class="visit-info reveal-up">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Let's get your lawn on the route</h2>
+        <p class="section-sub" style="margin-bottom:28px;">Call, or send a quote request and we'll get back to you to schedule a walkthrough.</p>
+
+        <ul class="visit-list">
+          <li><span class="visit-icon"><svg width="18" height="18"><use href="#icon-pin"/></svg></span><div><strong>2065 Emerald Green Cir</strong><br>Oviedo, FL 32765</div></li>
+          <li><span class="visit-icon"><svg width="18" height="18"><use href="#icon-phone"/></svg></span><div><a href="tel:+13212360906"><strong>(321) 236-0906</strong></a></div></li>
+          <li><span class="visit-icon"><svg width="18" height="18"><use href="#icon-clock"/></svg></span><div><strong id="open-status">&mdash;</strong><br><span class="hours-detail">Mon&ndash;Sat 7:00 AM&ndash;7:00 PM &middot; Sun Closed</span></div></li>
+        </ul>
+      </div>
+
+      <form class="quote-form reveal-up" id="quote-form" novalidate>
+        <h3 id="quote">Request a Free Quote</h3>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="f-name">Name</label>
+            <input type="text" id="f-name" name="name" required>
+            <span class="field-error">Please enter your name.</span>
+          </div>
+          <div class="form-field">
+            <label for="f-phone">Phone</label>
+            <input type="tel" id="f-phone" name="phone" required>
+            <span class="field-error">Please enter a phone number.</span>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="f-address">Property Address</label>
+          <input type="text" id="f-address" name="address" required>
+          <span class="field-error">Please enter your address.</span>
+        </div>
+        <div class="form-field">
+          <label for="f-service">Service Needed</label>
+          <select id="f-service" name="service" required>
+            <option value="" disabled selected>Select a service&hellip;</option>
+            <option>Lawn Maintenance</option>
+            <option>Shrub &amp; Tree Trimming</option>
+            <option>Sod Installation</option>
+            <option>Mulch &amp; Bed Refresh</option>
+            <option>Pressure Washing</option>
+            <option>Plant Removal &amp; Install</option>
+            <option>Something Else</option>
+          </select>
+          <span class="field-error">Please select a service.</span>
+        </div>
+        <div class="form-field">
+          <label for="f-notes">Notes <span class="optional">(optional)</span></label>
+          <textarea id="f-notes" name="notes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Request<svg width="16" height="16"><use href="#icon-arrow"/></svg></button>
+        <p class="form-success" id="form-success"><svg width="18" height="18"><use href="#icon-check"/></svg>Thanks &mdash; we'll be in touch to schedule your walkthrough.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="nav-logo">
+        <span class="logo-mark" aria-hidden="true"><svg width="20" height="20"><use href="#icon-shield"/></svg></span>
+        <span class="nav-logo-text">Lawn Patrol<span>Oviedo, FL</span></span>
+      </a>
+      <p>Family-owned lawn care, landscaping, and pressure washing serving Oviedo, FL since 2012.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Lawn Maintenance</a>
+      <a href="#services">Shrub &amp; Tree Trimming</a>
+      <a href="#services">Sod Installation</a>
+      <a href="#services">Pressure Washing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#route">The Route</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Free Quote</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+13212360906">(321) 236-0906</a>
+      <span>2065 Emerald Green Cir<br>Oviedo, FL 32765</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span id="year"></span> Lawn Patrol Landscaping. All rights reserved.</span>
+    <span>Built by WebSight</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
